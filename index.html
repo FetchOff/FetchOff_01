@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Fetch OFF Home Page</title>
+</head>
+<body>
+    <section class="showcase ">
+        <header>
+        <a href="index.html"><div class="logo" href="index.html"></div></a>
+        <div class="toggle " >
+            <a>MENU</a>
+        </div>
+    </header>
+
+    <video src="Images/turtle.mp4" muted loop autoplay></video>
+
+    <div class="overlay"></div>
+
+    <div class="text">
+        <h1>- FETCH OFF - </h1>
+        <h1>EVENT RECYCLING</h1>
+        <h2>FETCH RECYCLING OFF OF THE ENVIRONMENT</h2>
+        <h3>LETS SAVE OUR PLANET</h3>
+       <a HREF="contactform.htm" >CONTACT US</a>
+       <a HREF="AboutUs.html" >ABOUT US</a>
+    </div>
+
+    <ul class="social">
+        <li ><a href="https://www.instagram.com/fetchoff_?igsh=MzRlODBiNWFlZA=="><img src="Images/instagram.png" alt=""/></a></li>
+    </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="AboutUs.html">ABOUT US</a></li>
+            <li><a href="contactform.htm">CONTACT US</a></li>
+        </ul>
+    </div>
+
+<script>
+    const menuToggle = document.querySelector('.toggle')
+    const aToggle = document.querySelector('.toggle a')
+    const showcaseToggle = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active')
+        aToggle.classList.toggle('active')
+        showcaseToggle.classList.toggle('active')
+
+
+    })
+</script>
+
+</body>
+</html>

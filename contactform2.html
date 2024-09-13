@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Fetch OFF Home Page</title>
+</head>
+<body>
+    <section class="showcase ">
+        <header>
+        <a href="index.html"><div class="logo" href="index.html"></div></a>
+        <div class="toggle " >
+            <a>MENU</a>
+        </div>
+    </header>
+
+    <video src="Images/turtle.mp4" muted loop autoplay></video>
+
+   <!-- <div class="overlay"></div> -->
+<!---------------CONTACT FORM SECTION--------------->
+
+
+     <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>CONTACT US</h2>
+                <hr> 
+            </div>
+            <input type="hidden" name="access_key" value="aadd9077-498e-4a4a-9337-f4f861873b51">
+            <input type="text" name="Name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="eMail" name="eMail" placeholder="Your eMail" class="contact-inputs" required>
+            <textarea name="Message" placeholder="Your Message" class="contact-inputs" required></textarea>
+
+            <button class="submit">SUBMIT <img src="" alt=""></button>
+
+        
+    </div> 
+
+    <div class="overlay"></div>
+
+    <ul class="social">
+        <li ><a href="https://www.instagram.com/fetchoff_?igsh=MzRlODBiNWFlZA=="><img src="Images/instagram.png" alt=""/></a></li>
+    </ul>
+
+
+    </section>
+
+    <!-- <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>CONTACT US</h2>
+                <hr> 
+            </div>
+            <input type="hidden" name="access_key" value="83c9a52a-a16a-4525-b6de-012a0d0b8a76">
+            <input type="text" name="Name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="eMail" name="eMail" placeholder="Your eMail" class="contact-inputs" required>
+            <textarea name="Message" placeholder="Your Message" class="contact-inputs" required></textarea>
+
+            <button class="submit">SUBMIT <img src="" alt=""></button>
+
+        
+    </div> -->
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+<script>
+    const menuToggle = document.querySelector('.toggle')
+    const aToggle = document.querySelector('.toggle a')
+    const showcaseToggle = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active')
+        aToggle.classList.toggle('active')
+        showcaseToggle.classList.toggle('active')
+
+
+    })
+</script>
+
+</body>
+</html>

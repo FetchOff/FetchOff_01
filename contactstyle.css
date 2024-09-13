@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+:root{
+    --overlay-color: aqua;
+
+}
+/*--------------------BACKGROUNDS----------------------*/
+*{
+    font-family:'Permanent Marker';
+    margin:0;
+    padding:0;
+    
+
+}
+.overlay{
+    position: absolute;
+    
+    width:100%;
+    height:100%;
+    background: var(--overlay-color);
+    mix-blend-mode: overlay;
+}
+
+/*------LOGO---------*/
+
+.logo{
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    width: 90px;
+    height: 70px;
+    background: url('Images/FetchOFF_white.png');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    cursor: pointer;
+    margin-block: 0px;
+    transition:0.5s;
+    padding: 0px;
+   
+    top: 0;
+    left: 0;
+
+    margin-top: 20px;
+    margin-left: 30px;
+
+
+
+
+
+}
+.logo:hover{
+    transform:scale(2);
+}
+
+{
+    top: 0;
+    left: 0;
+    
+
+    z-index:1000;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 10;
+    position: absolute;
+    padding: 100px;
+   
+
+}
+
+
+/*--------------------CONTACT FORM----------------------*/
+
+
+body{
+   
+   background-color: rgb(0, 183, 255);
+   margin: 0;
+  
+}
+
+.contact-container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 10;
+    position: absolute;
+    padding: 100px;
+   
+
+}
+.contact-left{
+    display:  flex;
+    flex-direction: column;
+    align-items: start;
+    gap:20px;
+
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    color: aliceblue;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border:none;
+    width: 120px;
+    height: 5px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    /*background-color: rgba(255, 255, 255, 0.908);*/
+    background: linear-gradient(270deg,rgba(255, 255, 255, 0.407),whitesmoke);
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: rgba(154, 155, 155, 0.801);
+    border-radius: 50px;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 2px solid grey;
+}
+.contact-inputs:hover{
+    transform: scale(1.05);
+}
+
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding:15px 30px;
+    font-size: 16px;
+    color: white;
+    gap:10px;
+    border: none;
+    border-radius: 50px;
+   /* background: url('Images/Button_02.png');*/
+   background: rgba(245, 245, 245, 0.34);
+   cursor: pointer;
+   text-decoration: none;
+   transition: 0.2s;
+   
+
+
+}
+.contact-left button:hover{
+    letter-spacing: 6px;
+
+}
+
+/*.contact-left button img{
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform:scale(0.5);
+    padding: 15px 30px;
+}*/
+
+/*.submit {
+    background-image: url('Images/Button_02.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}*/
+
+@media(max-width:798px){
+/*-----CONTACT FORM------*/
+
+    .contact-inputs{
+        width:80vw;
+        padding:40px;
+        }
+
+    }
